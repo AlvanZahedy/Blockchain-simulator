@@ -1,0 +1,152 @@
+@import "base.css";
+
+/* Blocks */
+ul.blocks {
+    font-family: Lemon Milk;
+    margin-right: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    list-style-type: none;
+}
+
+ul.blocks li {
+    display: inline-block;
+    border: 5px solid green;
+    border-radius: 15px;
+    margin: 25px;
+    position: relative;
+    background-color: rgb(157, 199, 199);
+    transition: 0.5s;
+}
+
+/* Above text */
+h1 {
+    margin-left: 3.25%;
+    font-family: Roboto Thin
+}
+
+h2 {
+    margin-left: 3.25%;
+    font-family: Roboto;
+    font-size: 20px;
+    color: rgb(173, 177, 177);
+}
+
+/* The text above each block. Ex: BLOCK 1 */
+
+h3 {
+    font-size: 20px;
+
+    margin: 1px;
+    margin-bottom: 7px;
+
+    border-radius: 10px;
+    background-color: rgb(103, 66, 172);
+    text-align: center;
+    border: 2px solid rgb(49, 53, 53);
+}
+
+div {
+    font-size: 14.5px;
+}
+
+div.block-timestamp {
+    margin: 5px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(29, 228, 201);
+}
+
+div.block-innerTimeStamp {
+    color: rgb(129, 127, 127);
+    margin-right: 20px;
+}
+
+div.block-data {
+    margin: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(29, 228, 201);
+}
+
+div.block-innerdata {
+    color: rgb(129, 127, 127);
+}
+
+div.block-prev-hash {
+    margin: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(29, 228, 201);
+}
+
+div.block-innerPrev-hash {
+    color: rgb(129, 127, 127);
+}
+
+div.block-nonce {
+    margin: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(29, 228, 201);
+}
+
+div.block-innerNonce {
+    color: rgb(129, 127, 127);
+}
+
+div.block-hash {
+    margin: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(29, 228, 201);
+}
+
+div.block-innerHash {
+    color: rgb(129, 127, 127);
+}
+  
+a.block-card:link {
+    text-decoration: none;
+    color: white;
+}
+
+a.block-card:visited {
+    color: white;
+}
+
+a.block-card:hover {
+    color: white;
+}
+
+a.block-card:active {
+    color: white;
+}
+
+ul.blocks li:hover {
+    display: inline-block;
+    border: 5px solid green(161, 161, 161);
+    border-radius: 15px;
+    margin: 25px;
+    position: relative;
+    background-color: rgb(118, 150, 221);
+}

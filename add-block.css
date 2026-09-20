@@ -1,0 +1,71 @@
+@import "base.css";
+@import "see-chain.css";
+
+div {
+    font-family: Lemon Milk;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: Lemon Milk;
+    font-size: 75px;
+}
+
+
+div:hover {
+    cursor: default;
+}
+
+
+/* The actual block. */
+div.block {
+    margin: 25px;
+    margin-bottom: 60px;
+    margin-left: 39%;
+    /* max-width: 500px; */
+    border: 5px solid green;
+    border-radius: 15px;
+    position: absolute;
+    background-color: rgb(157, 199, 199);
+    text-decoration: none;
+}
+
+/* Submit Button */
+button.submit {
+    background-color: #2B2D2F;
+    color: #71DFBE;
+    padding: 1em 2.5em;
+    
+    border: 4.5px solid rgb(75, 74, 74);
+    border-radius: 10px;
+
+    font-family: Lemon Milk;
+    font-size: 30px;
+
+    margin-top: 600px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.submit:hover {
+    color: #2B2D2F;
+    background-color: #71DFBE;
+}
+
+input.block-data-input {
+    color: rgb(129, 127, 127);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: Lemon Milk;
+    font-size: 25px;
+    border: none;
+    padding-right: 90px;
+    background-color: rgb(29, 228, 201);
+}
+
+input.block-data-input::placeholder {
+    font-family: Roboto Thin;
+    font-size: 25px;
+    color: rgb(104, 102, 102)
+}
