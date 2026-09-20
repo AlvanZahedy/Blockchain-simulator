@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Simple Block Chain - Is the chain valid?
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../static/css/valid.css">
+{% endblock %}
+
+{% block content %}
+
+    {% if BlockChain.is_chain_valid() %}
+        The chain is valid!
+    {% else %}
+        Uh.. The chain has been tampered with.
+
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> {% block title %} Title {% endblock %}</title>
+
+  {% block css %} <link rel="stylesheet" href="../static/css/base.cs class=">  {% endblock %}
+
+</head>
+
+<body>
+
+  <header>
+
+  <!-- <button id="settings-button" class="settings"> Settings -->
+
+    <!-- <div id="settings-button-content" class="settings-button-closed">
+      Email: GetGood@lol.com
+    </div> -->
+
+    <nav>
+
+      <ul class="navbar" id="navbar">
+
+        <li> <a class="top-nav-bar home" href="{{ url_for('views.home') }}"> Home </a> </li>
+        <li> <a class="top-nav-bar mine" href="{{ url_for('views.mine') }}"> Mine Blocks </a> </li>
+        <li> <a class="top-nav-bar chain" href="{{ url_for('views.chain') }}"> See chain </a> </li>
+        <li> <a class="top-nav-bar add" href="{{ url_for('views.add_block') }}"> Add Block </a> </li>
+        <li> <a class="top-nav-bar valid" href="{{ url_for('views.valid') }}"> Validity </a> </li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <button class="navigation" id="navigation">Navigation</button>
+
+  {% block content %}<h1>Content<h1>{% endblock %}
+
+  <script src="../static/js/navbar-button.js"></script>
+
+</body>
+
+</html>

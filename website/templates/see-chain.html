@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+<title>{% block title %}Simple Block Chain - See Chain{% endblock %}</title>
+
+{% block css %}
+    <link rel="stylesheet" href="../static/css/see-chain.css">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Blocks in the chain</h1>
+    <h2>Each card represents a block in the chain. Click on a card to get more info on it.</h2>
+
+    <ul class="blocks">
+        {% for block in BlockChain.chain %}
+            <li> 
+                <a class="block-card" href="{{ url_for('views.block', position=block.index+1) }}">
+                    <h3>Block {{ block.index + 1 }}</h3>
+
+                    <div class="block-timestamp">
+                        Timestamp:
+                        <div class="block-innerTimeStamp"> {{ block.timestamp[:19] }} <br> GMT+6 (Bangladesh Time)</div> </div>
+                        
+                    <div class="block-data">Data: 
+                        <div class="block-innerdata"> {{ block.data }}</div> </div>
+
+                    <div class="block-nonce">Nonce: 
+                        <div class="block-innerNonce"> {{ block.nonce }} </div> </div>
+
+                    {% if not block.previous_hash %}
+                        <div class="block-prev-hash">Previous Hash: <div class="block-innerPrev-hash"> None </div> </div>
+
+                    {% else %}
+                        <div class="block-prev-hash">Previous Hash: <div class="block-innerPrev-hash"> {{ block.previous_hash[:15] }}... </div> </div>
+
+                    {% endif %}
+
+                    <div class="block-hash">Hash: <div class="block-innerHash"> {{ block.hash[:15] }}...</div> </div>
+                </a>
+            </li> 
+        
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
