@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Simple Block Chain - Adding Blocks
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../static/css/add-block.css">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Place your very own block inside the chain!</h1>
+    <h2>Type your data in the data box, click submit once you're done.</h2>
+
+    <form method="POST">
+        <div class="block">
+            <h3>Block</h3>
+
+            <div class="block-timestamp">
+                Timestamp:
+                <div class="block-innerTimeStamp"> To be chosen once added.</div> </div>
+                
+            <div class="block-data" id="data">Data: <br>
+                <input name="data" class="block-data-input" id="data-input" placeholder="Type your data here!"></input>
+            </div>
+
+            <div class="block-nonce">Nonce: 
+                <div class="block-innerNonce">To be chosen</div> </div>
+
+            <div class="block-prev-hash">Previous Hash: <div class="block-innerPrev-hash"> To be chosen </div> </div>
+
+            <div class="block-hash">Hash: <div class="block-innerHash">To be chosen</div> </div>
+        </div>
+
+        <button class="submit" id="submit-button">Submit</button>
+    </form>
+
+{% endblock %}
